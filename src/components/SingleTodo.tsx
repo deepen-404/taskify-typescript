@@ -55,7 +55,7 @@ const SingleTodo = ({ todo, todos, setTodos }: Props) => {
   return (
     <form
       onSubmit={(e) => handleEditSubmit(e, todo.id)}
-      className="border-2 border-black m-4 flex gap-2 w-[29.5%] rounded-md p-[0.85rem] mt-4 bg-singleTodoBackground max-w-screen-beforeSixHdr:w-[90%] sm:w-[90%] md:w-[40%] lg:w-[27%]"
+      className="single__todo__container border-2 border-black m-4 flex gap-2 w-[29.5%] rounded-md p-[0.85rem] mt-4 bg-singleTodoBackground max-w-screen-beforeSixHdr:w-[90%] sm:w-[90%] md:w-[40%] lg:w-[27%]"
     >
       {edit ? (
         <input
