@@ -35,7 +35,7 @@ const SingleTodo = ({ todo, todos, setTodos }: Props) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
   // function
-  const handleEdit = (id: number) => {
+  const handleEdit = () => {
     if (!edit && !todo.isDone) {
       setEdit(!edit);
     }
@@ -77,7 +77,7 @@ const SingleTodo = ({ todo, todos, setTodos }: Props) => {
 
       <div className="flex pt-3 justify-between">
         <span className="icon">
-          <AiFillEdit onClick={() => handleEdit(todo.id)} />
+          <AiFillEdit onClick={() => handleEdit()} />
         </span>
         <span className="icon">
           <MdDelete onClick={() => handleDelete(todo.id)} />
